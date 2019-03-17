@@ -1,5 +1,6 @@
 package ru.vlabum.alg;
 
+import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 public class MyStack<Item>  {
@@ -44,6 +45,20 @@ public class MyStack<Item>  {
             throw new NoSuchElementException("Stack is empty");
         }
         return (Item) stack[size-1];
+    }
+
+    public static <Item> boolean less(Item item1, Item item2, Comparator<Item> cmp) {
+        return cmp.compare(item1, item2) < 0;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = size - 1; i >= 0; i--) {
+            sb.append(stack[i]);
+            sb.append(", ");
+        }
+        return sb.toString();
     }
 
 }
