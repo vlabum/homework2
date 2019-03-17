@@ -25,7 +25,10 @@ public class AppTestPower {
                 {2L, 7L},
                 {3L, 9L},
                 {4L, 4L},
-                {5L, 8L}
+                {5L, 8L},
+                {8L, 7L},
+                {8L, 0L},
+                {0L, 7L}
         });
     }
 
