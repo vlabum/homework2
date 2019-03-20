@@ -74,9 +74,15 @@ public class AppTestTree {
         while (tree.height() < 6) {
             int k = rnd.nextInt(201) - 100;
             tree.put(k, 0);
+<<<<<<< HEAD
 //            System.out.print(k + " ");
         }
 //        System.out.println();
+=======
+            System.out.print(k + " ");
+        }
+        System.out.println();
+>>>>>>> origin/master
         return tree;
     }
 
